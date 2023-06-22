@@ -18,5 +18,5 @@
 
     $conn->close();
 
-    header("location: AppointmentIndex.php");
+    header("location: Appointment_Index.php");
 ?>

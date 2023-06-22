@@ -86,14 +86,25 @@
             text-align: center;
             color: #202C22;
         }
-        #list {
-            width: 70%;
-            margin-left: 10%;
-            margin-right: 10%;
-            background-color: rgba(106, 123, 139, 0.85);
+        #Form_size {
             height: auto;
+            
+            background-color: rgba(106, 123, 139, 0.85);
         }
-        
+        #Form_align {
+            height: auto;
+            margin-left: 20px;
+            background-color: rgba(106, 123, 139, 0.85);
+        }
+        #Show_Patient, #Show_Doctor, #Show_Time, #Show_Date {
+            background-color: rgba(47, 65, 49, 0.75);
+            color: white;
+            margin-left: 20px;
+            border: 1px solid whitesmoke;
+            padding-top: 5px;
+            padding-bottom: 5px;
+            border-radius: 4px;
+        }
 
     </style>
     <script>

@@ -93,24 +93,23 @@
         }
         #Form_size {
             height: auto;
-            width: 80%;
-            margin-left: auto;
-            margin-right: auto;
+            position: absolute;
+            padding: 5px;
+            left: 50%;
+            top: 50%;
+            transform: translate(-50%, -50%);
             background-color: rgba(106, 123, 139, 0.85);
         }
         #Form_align {
             height: auto;
-            width: 80%;
-            margin-left: 200px;
+            margin-left: 20px;
             background-color: rgba(106, 123, 139, 0.85);
         }
         #Show_Patient, #Show_Doctor, #Show_Time, #Show_Date {
             background-color: rgba(47, 65, 49, 0.75);
             color: white;
-            
-            margin-left: 20%;
+            margin-left: 20px;
             border: 1px solid whitesmoke;
-            margin-bottom: 10px;
             padding-top: 5px;
             padding-bottom: 5px;
             border-radius: 4px;
