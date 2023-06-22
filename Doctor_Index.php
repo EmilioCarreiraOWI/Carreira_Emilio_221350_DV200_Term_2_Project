@@ -88,7 +88,7 @@
         }
         #Form_size {
             height: auto;
-            
+            margin-left: 20px;
             background-color: rgba(106, 123, 139, 0.85);
         }
         #Form_align {
@@ -96,7 +96,7 @@
             margin-left: 20px;
             background-color: rgba(106, 123, 139, 0.85);
         }
-        #Show_Patient, #Show_Doctor, #Show_Time, #Show_Date {
+        #Show_name, #Show_Surname, #Show_Age, #Show_Gender, #Show_Profile, #Show_Number, #Show_Email, #Show_Specialisation {
             background-color: rgba(47, 65, 49, 0.75);
             color: white;
             margin-left: 20px;
@@ -104,6 +104,24 @@
             padding-top: 5px;
             padding-bottom: 5px;
             border-radius: 4px;
+        }
+        #list {
+            position: absolute;
+            margin-left: 20px;
+
+        }
+        #contain2 {
+            margin-left: 40%;
+            width: 850px;
+            
+        }
+        #mainheading2 {
+            margin-top: 10%;
+            margin-bottom: -75px;
+            margin-left: 41.5%;
+            width: 250px;
+            background-color: rgba(17, 22, 19, 0.95);
+            color: white;
         }
 
     </style>
@@ -194,16 +212,19 @@
         </div>
     </div>
     
-    <div id="headinglist">
-        
+    <div id="mainheading2">
+                <h3>Created Patients</h3>
     </div>
-    <div id="list">
-       <ul>
+    <div id="contain2" class="container">
+        
+        <tbody id="list">
             <?php
                 include 'Doctor_Read.php';
             ?>
-        </ul> 
+        </tbody>
     </div>
+       
+    
         
         
         
