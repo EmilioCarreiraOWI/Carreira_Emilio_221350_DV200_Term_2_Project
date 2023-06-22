@@ -120,7 +120,7 @@
         }
         #mainheading2 {
             margin-top: 10%;
-            margin-bottom: -75px;
+            margin-bottom: -10px;
             margin-left: 41.5%;
             width: 250px;
             background-color: rgba(17, 22, 19, 0.95);
@@ -219,7 +219,7 @@
         
         <tbody id="list">
             <?php
-                include 'Doctor_Read.php';
+                include 'Patient_Read.php';
             ?>
         </tbody>
     </div>

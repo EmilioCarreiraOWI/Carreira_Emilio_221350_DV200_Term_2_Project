@@ -17,15 +17,11 @@
             echo '<input type="text" name="time" id="Show_Time" class="form-control" value="'.$row['time'].'"></td>';
 
             // Create a dropdown list to select the doctor
-            $sql1 = "SELECT id, name, surname FROM doctor";
+            $sql1 = "SELECT name, surname, id FROM doctor ORDER BY surname ASC";
             $result1 = $conn->query($sql1);
             echo '<td><label for="doctor"><b>Doctor:</b></label><select name="doctor" id="Show_Doctor" class="form-control">';
-            while($doctor = $result1->fetch_assoc()) {
-                if ($doctor['id'] == $row['doctor']) {
-                    echo '<option value="'.$doctor['id'].'" selected>'.$doctor['name'].' '.$doctor['surname'].'</option>';
-                } else {
-                    echo '<option value="'.$doctor['id'].'">'.$doctor['name'].' '.$doctor['surname'].'</option>';
-                }
+            while($rowD = $result1->fetch_assoc()) {
+                    echo '<option name="doctor" value="'.$rowD['id'].'" selected>'.$rowD['name'].' '.$rowD['surname'].'</option>';
             }
             echo '</select></td>';
 
@@ -33,12 +29,8 @@
             $sql2 = "SELECT id, name, surname FROM patients";
             $result2 = $conn->query($sql2);
             echo '<td><label for="patient"><b>Patient:</b></label><select name="patient" id="Show_Patient" class="form-control">';
-            while($patient = $result2->fetch_assoc()) {
-                if ($patient['id'] == $row['patient']) {
-                    echo '<option value="'.$patient['id'].'" selected>'.$patient['name'].' '.$patient['surname'].'</option>';
-                } else {
-                    echo '<option value="'.$patient['id'].'">'.$patient['name'].' '.$patient['surname'].'</option>';
-                }
+            while($rowP = $result2->fetch_assoc()) {
+                    echo '<option value="'.$rowP['id'].'" selected>'.$rowP['name'].' '.$rowP['surname'].'</option>';
             }
             echo '</select></td>';
             

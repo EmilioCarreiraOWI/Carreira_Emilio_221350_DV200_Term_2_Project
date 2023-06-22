@@ -1,3 +1,4 @@
+
 <!DOCTYPE html>
 <html>
 <head>
@@ -47,6 +48,15 @@
                 <li class="nav-item">
                     <a class="nav-link" href="http://127.0.0.1/Emilio&Tsungai\Carreira_Emilio_221350_DV200_Term_2_Project\Doctor_Index.php">Doctor</a>
                 </li>
+                <li class="nav-item">
+                    <a class="nav-link" href="http://127.0.0.1/Emilio&Tsungai\Carreira_Emilio_221350_DV200_Term_2_Project\Doctor_Index.php"><?php echo $_SESSION['name']; ?></a>
+                </li>
+                
+            </ul>
+            <ul class="navbar-nav float-right">
+              <li class="nav-item">
+                    <a class="nav-link btn-secondary" href="Logout.php">Logout</a>
+              </li>
             </ul>
         </div>
     </nav>

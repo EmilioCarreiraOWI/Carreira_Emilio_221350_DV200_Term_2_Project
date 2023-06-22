@@ -105,21 +105,17 @@
             padding-bottom: 5px;
             border-radius: 4px;
         }
-        #list {
-            position: absolute;
-            margin-left: 20px;
-
-        }
+        
         #contain2 {
             margin-left: 40%;
-            width: 850px;
+            width: 300px;
             
         }
         #mainheading2 {
             margin-top: 10%;
             margin-bottom: -75px;
             margin-left: 41.5%;
-            width: 250px;
+            width: 255px;
             background-color: rgba(17, 22, 19, 0.95);
             color: white;
         }
