@@ -13,7 +13,7 @@
     $conn->close();
 
     // Redirect to the appointment index page with success message
-    header("location: AppointmentIndex.php?success=Successfully added as a new appointment for DR. " . "$doctor");
+    header("location: Appointment_Index.php?success=Successfully added as a new appointment for DR. " . "$doctor");
 ?>
 
 

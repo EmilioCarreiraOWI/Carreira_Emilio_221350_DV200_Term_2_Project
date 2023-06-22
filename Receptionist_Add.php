@@ -18,6 +18,6 @@
     $conn->close();
 
     // Redirect to the receptionist index page with success message
-    header("location: ReceptionistIndex.php?success=$name $surname Successfully added as a new Receptionist");
+    header("location: Receptionist_Index.php?success=$name $surname Successfully added as a new Receptionist");
 ?>
  

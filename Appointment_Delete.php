@@ -14,5 +14,5 @@
 
     $conn->close(); // Close the database connection
 
-    header("location: AppointmentIndex.php"); // Redirect to the Doctor Index page
+    header("location: Appointment_Index.php"); // Redirect to the Doctor Index page
 ?>

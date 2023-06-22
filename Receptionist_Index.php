@@ -115,7 +115,7 @@
                 <h3>Create Receptionist</h3>
             </div>
 
-            <form action="addreceptionist.php" method="POST">
+            <form action="Receptionist_Add.php" method="POST">
 
             <?php if (isset($_GET['success'])) { ?>
 

@@ -118,7 +118,7 @@
             <div id="mainheading">
                 <h3>Create Doctor Account</h3>
             </div>
-            <form id="Form1" method="POST" action="adddoctor.php" >
+            <form id="Form1" method="POST" action="Doctor_Add.php" >
 
             <?php if (isset($_GET['success'])) { ?>
 
@@ -189,7 +189,7 @@
     <div id="list">
        <ul>
             <?php
-                include 'Doctor_read.php';
+                include 'Doctor_Read.php';
             ?>
         </ul> 
     </div>

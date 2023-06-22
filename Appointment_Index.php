@@ -142,7 +142,7 @@
                 <h3>Create Appointment</h3>
             </div>
             
-            <form action="addAppointment.php" method="POST">
+            <form action="Appointment_Add.php" method="POST">
 
             <?php if (isset($_GET['success'])) { ?>
 
@@ -205,7 +205,7 @@
 
     <div id="">
        <?php
-            include 'read_Appointment.php';
+            include 'Appointment_Read.php';
         ?> 
     </div>
          

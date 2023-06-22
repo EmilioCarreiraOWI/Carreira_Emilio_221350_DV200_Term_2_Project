@@ -17,6 +17,6 @@
     $conn->close();
 
     // Redirect to the patient index page with success message
-    header("location: PatientIndex.php?success=$name $surname Successfully added as a new patient");
+    header("location: Patient__Index.php?success=$name $surname Successfully added as a new patient");
 ?>
 

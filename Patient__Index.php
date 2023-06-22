@@ -112,7 +112,7 @@
                 <h3>Create Patient Account</h3>
             </div>
             
-            <form action="addpatient.php" method="POST">
+            <form action="Patient_Add.php" method="POST">
 
             <?php if (isset($_GET['success'])) { ?>
 

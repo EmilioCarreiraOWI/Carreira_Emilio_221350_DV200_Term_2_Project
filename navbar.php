@@ -27,7 +27,7 @@
     <nav class="my-company navbar navbar-expand-lg navbar-dark  fixed-top">
       <div id="mainName">
         <img src="https://static.vecteezy.com/system/resources/previews/000/565/402/original/hospital-logo-and-symbols-template-icons-vector.jpg" alt="">
-        <a  class="navbar-brand" href="http://127.0.0.1/Emilio&Tsungai\receptionistIndex.php">Health Centre</a>
+        <a  class="navbar-brand" href="http://127.0.0.1/Emilio&Tsungai\Carreira_Emilio_221350_DV200_Term_2_Project\Appointment_Index.php">Health Centre</a>
       </div>
         
         <button class="navbar-toggler" type="button" data-toggle="collapse" data-target="#navbarNav" aria-controls="navbarNav" aria-expanded="false" aria-label="Toggle navigation">
@@ -36,16 +36,16 @@
         <div class="collapse navbar-collapse" id="navbarNav">
             <ul class="navbar-nav">
               <li class="nav-item active">
-                    <a class="nav-link" href="http://127.0.0.1/Emilio&Tsungai\AppointmentIndex.php">Appointment</a>
+                    <a class="nav-link" href="http://127.0.0.1/Emilio&Tsungai\Carreira_Emilio_221350_DV200_Term_2_Project\Appointment_Index.php">Appointment</a>
                 </li>
                 <li class="nav-item">
-                    <a class="nav-link" href="http://127.0.0.1/Emilio&Tsungai\receptionistIndex.php">Receptionist</a>
+                    <a class="nav-link" href="http://127.0.0.1/Emilio&Tsungai\Carreira_Emilio_221350_DV200_Term_2_Project\Receptionist_Index.php">Receptionist</a>
                 </li>
                 <li class="nav-item">
-                    <a class="nav-link" href="http://127.0.0.1/Emilio&Tsungai\PatientIndex.php">Patient</a>
+                    <a class="nav-link" href="http://127.0.0.1/Emilio&Tsungai\Carreira_Emilio_221350_DV200_Term_2_Project\Patient__Index.php">Patient</a>
                 </li>
                 <li class="nav-item">
-                    <a class="nav-link" href="http://127.0.0.1/Emilio&Tsungai\DoctorIndex.php">Doctor</a>
+                    <a class="nav-link" href="http://127.0.0.1/Emilio&Tsungai\Carreira_Emilio_221350_DV200_Term_2_Project\Doctor_Index.php">Doctor</a>
                 </li>
             </ul>
         </div>

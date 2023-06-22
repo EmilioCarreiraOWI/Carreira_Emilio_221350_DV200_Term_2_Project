@@ -17,7 +17,7 @@
     $conn->close();
 
     // Redirect to the doctor index page with success message
-    header("location: DoctorIndex.php?success=$name $surname Successfully added as a new Doctor");
+    header("location: Doctor_Index.php?success=$name $surname Successfully added as a new Doctor");
 ?>
 
 

@@ -15,5 +15,5 @@
     $result = $conn->query($sql);
     $conn->close();
 
-    header("location: DoctorIndex.php");
+    header("location: Doctor_Index.php");
 ?>

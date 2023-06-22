@@ -9,5 +9,5 @@
     $conn->query($sql); // Execute the query
     $conn->close(); // Close the database connection
 
-    header("location: DoctorIndex.php"); // Redirect to the Doctor Index page
+    header("location: Doctor_Index.php"); // Redirect to the Doctor Index page
 ?>
