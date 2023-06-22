@@ -9,7 +9,7 @@
         echo "<tr id='Form_align'>";
         if ($row['id'] == $_GET['id']) {
             // Update the form action and method so that the data is submitted correctly
-            echo '<form id="Form_size" class="form-inline m-2" action="Doctor_Update.php" method="POST">';
+            echo '<form id="Form_size" class="form-inline m-2" action="Receptionist_Update.php" method="POST">';
             
             // Add a hidden input field to store the doctor's ID
             echo '<input type="hidden" name="id" value="'.$row['id'].'">';
@@ -65,11 +65,11 @@
             echo "<td>".$row['email']."</td>";
             echo "<td>".$row['rank']."</td>";
             
-            echo '<td><a href="Doctor_Update.php?id='.$row['id'].'">Update</a></td>';
+            echo '<td><a href="Receptionist_Update.php?id='.$row['id'].'">Update</a></td>';
         }
         
         // Add a Delete link to remove the doctor from the system
-        echo '<td><a class="btn btn-danger" href="Doctor_Delete.php?id='.$row['id'].'" role="button">Delete</a></td>';
+        echo '<td><a class="btn btn-danger" href="Receptionist_Delete.php?id='.$row['id'].'" role="button">Delete</a></td>';
         
         // Close the table row
         echo "</tr>";

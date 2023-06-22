@@ -6,7 +6,7 @@
     <title>Document</title>
 
     <style>
-        .contain1 {
+        #contain1 {
             margin-top: 5%;
             
         }
@@ -99,7 +99,7 @@
             margin-left: 20px;
             background-color: rgba(106, 123, 139, 0.85);
         }
-        #Show_name, #Show_Surname, #Show_Age, #Show_Gender, #Show_Profile, #Show_Number, #Show_Email, #Show_Specialisation {
+        #Show_name, #Show_Surname, #Show_Age, #Show_Gender, #Show_Profile, #Show_Number, #Show_Email, #Show_Medical_Aid_Number {
             background-color: rgba(47, 65, 49, 0.75);
             color: white;
             margin-left: 20px;
@@ -145,7 +145,7 @@
         include 'navbar.php';
     ?>
 
-    <div class="container">
+    <div id="contain1" class="container">
         <div class="row">
             <div id="mainheading">
                 <h3>Create Patient Account</h3>

@@ -7,7 +7,7 @@
     $patient = $_POST["patient"];
     $id = $_POST["id"]; // Get the ID to be updated from the hidden form input
 
-    $sql = "UPDATE  appointment  SET  doctor_ID='$doctor',`patient_id`='$patient',`date`='$date',`time`='$time' WHERE id='$id'";
+    $sql = "UPDATE  appointment  SET  doctor_ID='$doctor', patient_id='$patient', date='$date', time='$time' WHERE id='$id'";
     $result = $conn->query($sql);
 
     if ($result === TRUE) {
