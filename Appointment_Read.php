@@ -23,11 +23,15 @@
         } else {
             echo "<td>".$row['date']."</td>";
             echo "<td>".$row['time']."</td>";
+
             $sql1 = "SELECT name, surname FROM doctor WHERE id = ".$row['doctor'];
             $result1 = $conn->query($sql1);
             $doctor = $result1->fetch_assoc();
-            echo "<td>".$doctor['name']." ".$doctor['surname']."</td>";
-            echo "<td>".$row['patient']."</td>";
+
+            $sql2 = "SELECT name, surname FROM patients WHERE id = ".$row['patient'];
+            $result2 = $conn->query($sql1);
+            $patient = $result1->fetch_assoc();
+            
             echo '<td><a class="btn btn-primary" href="Appointment_Update.php?id='.$row['id'].'" role="button">Update</a></td>';
         }
         echo '<td><a class="btn btn-danger" href="Appointment_Delete.php?id='.$row['id'].'" role="button">Delete</a></td>';

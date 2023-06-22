@@ -42,7 +42,7 @@
                     <a class="nav-link" href="http://127.0.0.1/Emilio&Tsungai\Carreira_Emilio_221350_DV200_Term_2_Project\Receptionist_Index.php">Receptionist</a>
                 </li>
                 <li class="nav-item">
-                    <a class="nav-link" href="http://127.0.0.1/Emilio&Tsungai\Carreira_Emilio_221350_DV200_Term_2_Project\Patient__Index.php">Patient</a>
+                    <a class="nav-link" href="http://127.0.0.1/Emilio&Tsungai\Carreira_Emilio_221350_DV200_Term_2_Project\Patient_Index.php">Patient</a>
                 </li>
                 <li class="nav-item">
                     <a class="nav-link" href="http://127.0.0.1/Emilio&Tsungai\Carreira_Emilio_221350_DV200_Term_2_Project\Doctor_Index.php">Doctor</a>
