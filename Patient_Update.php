@@ -15,8 +15,7 @@
 
   // SQL query to update the patient's record with new data provided in $_POST
   $sql = "UPDATE patients SET profile_image='$profileimage', name='$name', surname='$surname', age='$age', gender='$gender', phone_number='$phonenumber', email='$email', medical_aid_number='$medical_aid_number' WHERE id='$id'";
-
-  $stmt->close(); // Closes the prepared statement
+ 
   $conn->close(); // Closes the database connection 
   
   header("Location: Patient_Index.php"); // Redirects the user to the patient index page

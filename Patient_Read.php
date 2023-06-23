@@ -52,7 +52,7 @@
             echo '</form>';
         } else {
             // Display the doctor details as normal and include an Update link to edit data
-            echo "<td>". "<img src='" . $row['time'] . "'>" . "</td>";
+            echo "<td id=\"Show_Profile\">". "<img src='" . $row['time'] . "'>" . "</td>";
             echo "<td>".$row['name']."</td>";
             echo "<td>".$row['surname']."</td>";
             echo "<td>".$row['age']."</td>";
