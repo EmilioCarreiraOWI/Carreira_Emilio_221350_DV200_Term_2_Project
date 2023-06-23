@@ -214,7 +214,7 @@
     </div>
 
     <div id="mainheading2">
-                <h3>Created Patients</h3>
+                <h3>Created Receptionist</h3>
     </div>
     <div id="contain2" class="container">
         

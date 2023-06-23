@@ -1,3 +1,9 @@
+<?php 
+session_start();
+
+if (isset($_SESSION['id']) && isset($_SESSION['user_name'])) {
+
+ ?>
 <!DOCTYPE html>
 <html lang="en">
 <head>
@@ -6,10 +12,11 @@
     <title>Document</title>
 
     <style>
-        .container {
+        #contain1 {
             margin-top: 5%;
+            
         }
-        #Form1 {
+        form {
             border: 3px solid black;
             height: auto;
             width: 30%;
@@ -17,7 +24,7 @@
             margin-right: 35%;
             background-color: rgba(106, 123, 139, 0.85);
         }
-        #phonenumber, #email, #specialisation, #profileimage {
+        #phonenumber, #email, #medical_aid_number, #profileimage {
             background-color: rgba(47, 65, 49, 0.75);
             color: white;
             width: 70%;
@@ -88,15 +95,17 @@
         }
         #Form_size {
             height: auto;
+            
             margin-left: 20px;
             background-color: rgba(106, 123, 139, 0.85);
         }
         #Form_align {
             height: auto;
+            
             margin-left: 20px;
             background-color: rgba(106, 123, 139, 0.85);
         }
-        #Show_name, #Show_Surname, #Show_Age, #Show_Gender, #Show_Profile, #Show_Number, #Show_Email, #Show_Specialisation {
+        #Show_name, #Show_Surname, #Show_Age, #Show_Gender, #Show_Profile, #Show_Number, #Show_Email, #Show_Medical_Aid_Number {
             background-color: rgba(47, 65, 49, 0.75);
             color: white;
             margin-left: 20px;
@@ -105,21 +114,25 @@
             padding-bottom: 5px;
             border-radius: 4px;
         }
-        
+        #list {
+            position: absolute;
+            margin-left: 20px;
+            
+        }
         #contain2 {
             margin-left: 40%;
-            width: 300px;
+            width: 850px;
             
         }
         #mainheading2 {
             margin-top: 10%;
-            margin-bottom: -75px;
+            margin-bottom: -10px;
             margin-left: 41.5%;
-            width: 255px;
+            width: 250px;
             background-color: rgba(17, 22, 19, 0.95);
             color: white;
         }
-
+        
     </style>
     <script>
 
@@ -138,12 +151,13 @@
         include 'navbar.php';
     ?>
 
-    <div class="container">
+    <div id="contain1" class="container">
         <div class="row">
             <div id="mainheading">
-                <h3>Create Doctor Account</h3>
+                <h3>Create Patient Account</h3>
             </div>
-            <form id="Form1" method="POST" action="Doctor_Add.php" >
+            
+            <form action="Patient_Add.php" method="POST">
 
             <?php if (isset($_GET['success'])) { ?>
 
@@ -152,20 +166,18 @@
                 <?php echo $_GET['success']; ?></p></b>
      	    <?php } ?>
 
-        
                 <div class="row">
-                    
                 <!--Email-->
                     <div class="col-sm-12">
                         <label class="col-sm-12" id="heading" for=""><b>Email</b></label>
                         <input class="col-sm-12" type="text" class="form-control" id="email" name="email"> 
                     </div>
-                <!--Name & Surname-->
+                <!--Name-->
                     <div class="col-sm-4" style="margin-left: 14%;">
                         <label class="col-sm-8" id="heading" for=""><b>Name</b></label>
                         <input class="col-sm-12" type="text" class="form-control" id="name" name="name">
                     </div>
-                <!--Name & Surname-->
+                <!--Surname-->
                     <div class="col-sm-4" style="margin-left: 18px;">
                         <label class="col-sm-8" id="heading" for=""><b>Surname</b></label>
                         <input class="col-sm-12" type="text" class="form-control" id="surname" name="surname">
@@ -187,10 +199,10 @@
                         <label class="col-sm-12" id="heading" for=""><b>Phone Number</b></label>
                         <input class="col-sm-12" type="number" class="form-control" id="phonenumber" name="phonenumber"> 
                     </div>
-                <!--Specialisation-->
+                <!--Medical_aid_number-->
                     <div class="col-sm-12">
-                        <label class="col-sm-12" id="heading" for=""><b>Specialisation</b></label>
-                        <input class="col-sm-12" type="text" class="form-control" id="specialisation" name="specialisation"> 
+                        <label class="col-sm-12" id="heading" for=""><b>Medical Aid Number</b></label>
+                        <input class="col-sm-12" type="number" class="form-control" id="medical_aid_number" name="medical_aid_number"> 
                     </div>
                 <!--Profile Image-->
                     <div class="col-sm-12">
@@ -199,31 +211,29 @@
                     </div> 
 
                     <div id="btns" class="col-sm-12">
-                        <button  id="btn-danger" class="col-sm-5 btn-danger mx-1">Discart</button>
+                        <button id="btn-danger" class="col-sm-5 btn-danger mx-1">Discart</button>
                         <button id="btn-primary" class="col-sm-5 btn-primary mx-1">Add Account</button>
                     </div>
                 </div>   
-
             </form>
         </div>
     </div>
-    
     <div id="mainheading2">
-                <h3>Created Doctors</h3>
+                <h3>Created Patients</h3>
     </div>
     <div id="contain2" class="container">
         
         <tbody id="list">
             <?php
-                include 'Doctor_Read.php';
+                include 'Patient_Read.php';
             ?>
         </tbody>
     </div>
-       
-    
-        
-        
-        
-    
 </body>
-</html>
+
+<?php 
+}else{
+     header("Location: Log-on_index.php");
+     exit();
+}
+ ?>
