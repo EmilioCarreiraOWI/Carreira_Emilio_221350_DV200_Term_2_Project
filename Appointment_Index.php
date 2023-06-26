@@ -93,6 +93,8 @@
             color: #202C22;
         }
         #Form_size {
+            margin-left: auto;
+            margin-right: auto;
             height: auto;
             padding: 5px;
             background-color: rgba(106, 123, 139, 0.85);
@@ -139,63 +141,61 @@
             </div>
             
             <form action="Appointment_Add.php" method="POST">
-
-            <?php if (isset($_GET['success'])) { ?>
-
-     		    <b><p class="successmessage">
-
-                <?php echo $_GET['success']; ?></p></b>
-     	    <?php } ?>
-
+                <?php if (isset($_GET['success'])): ?>
+                    <b><p class="successmessage"><?= $_GET['success'] ?></p></b>
+                <?php endif ?>
+            
                 <div class="row">
                     <div class="col-md-6">
                         <!-- Doctor -->
-                        <?php
-                            // Code to generate dropdown list of doctors
-                            echo '<label class="col-sm-12" id="heading" for=""><b>Doctor:</b></label>';
-                            echo '<select id="doctor" name="doctor" class="form-control">';
-                            $sqlD = "SELECT name, surname, doctor_id FROM doctor ORDER BY surname ASC";
-                            $resultD = $conn->query($sqlD);
-                            // populate select with the names of each doctor. The doctor's ID will become the value
-                            while ($rowD = $resultD->fetch_assoc()) {
-                                echo '<option name="doctor" value="' . $rowD['doctor_id'] . '"> ' . $rowD['name'] . ' ' . $rowD['surname'] . '</option>';
-                            }
-                            echo '</select>';
-                
-                            // Code to generate dropdown list of patients
-                            echo '<label class="col-sm-12" id="heading" for=""><b>Patient:</b></label>';
-                            echo '<select name="patient" class="form-control" id="patient">';
-                            $sqlP = "SELECT name, surname, patient_id FROM patients ORDER BY surname ASC";
-                            $resultP = $conn->query($sqlP);
-                            // populate select with the names of each patient. The patient's ID will become the value
-                            while ($rowP = $resultP->fetch_assoc()) {
-                                echo '<option name="patient" value="' . $rowP['patient_id'] . '"> ' . $rowP['name'] . ' ' . $rowP['surname'] . '</option>';
-                            }
-                            echo '</select>';   
-                        ?>
+                        <label class="col-sm-12" for="doctor"><b>Doctor:</b></label>
+                        <select id="doctor" name="doctor" class="form-control">
+                            <option value="">Select Doctor</option>
+                            <?php
+                                $sqlD = "SELECT name, surname, doctor_id FROM doctor ORDER BY surname ASC";
+                                $resultD = $conn->query($sqlD);
+                                while ($rowD = $resultD->fetch_assoc()):
+                                    ?>
+                                    <option value="<?= $rowD['doctor_id'] ?>"><?= $rowD['name'] ?> <?= $rowD['surname'] ?></option>
+                                <?php endwhile ?>
+                        </select>
+            
+                        <!-- Patient -->
+                        <label class="col-sm-12" for="patient"><b>Patient:</b></label>
+                        <select id="patient" name="patient" class="form-control">
+                            <option value="">Select Patient</option>
+                            <?php
+                                $sqlP = "SELECT name, surname, patient_id FROM patients ORDER BY surname ASC";
+                                $resultP = $conn->query($sqlP);
+                                while ($rowP = $resultP->fetch_assoc()):
+                                    ?>
+                                    <option value="<?= $rowP['patient_id'] ?>"><?= $rowP['name'] ?> <?= $rowP['surname'] ?></option>
+                                <?php endwhile ?>
+                        </select>
                     </div>
+            
                     <div class="col-md-5">
                         <!-- Date -->
                         <div class="col-sm-12">
-                            <label class="col-sm-12" id="heading" for=""><b>Date:</b></label>
-                            <input class="col-sm-12" type="date" class="form-control" id="date" name="date"> 
+                            <label class="col-sm-12" for="date"><b>Date:</b></label>
+                            <input class="col-sm-12 form-control" type="date" id="date" name="date" min="<?= date('Y-m-d') ?>">
                         </div>
+            
                         <!-- Time -->
                         <div class="col-sm-12">
-                            <label class="col-sm-12" id="heading" for=""><b>Time:</b></label>
-                            <input class="col-sm-12" type="time" class="form-control" id="time" name="time"> 
+                            <label class="col-sm-12" for="time"><b>Time:</b></label>
+                            <input class="col-sm-12 form-control" type="time" id="time" name="time" max="20:00" min="08:00">
                         </div>
                     </div>
-                
+            
                     <!-- Buttons -->
                     <div id="btns" class="col-sm-12">
-                        <button id="btn-danger" class="col-sm-5 btn-danger mx-1">Discard</button>
-                        <button id="btn-primary" class="col-sm-5 btn-primary mx-1">Add Appointment</button>
+                        <button class="col-sm-5 btn-secondary mx-1">Discard</button>
+                        <button id="btn-primary" type="submit" class="col-sm-5 btn-success mx-1" name="addAppointment">Add Appointment</button>
                     </div>
                 </div>
-                   
-            </form> 
-            
+            </form>
+              
         </div>
     </div>
 

@@ -10,12 +10,7 @@
     $sql = "UPDATE  appointment  SET  doctor_ID='$doctor', patient_id='$patient', date='$date', time='$time' WHERE id='$id'";
     $result = $conn->query($sql);
 
-    if ($result === TRUE) {
-        echo "Record updated successfully";
-    } else {
-        echo "Error updating record: " . $conn->error;
-    }
-
+    $stmt->close();
     $conn->close();
 
     header("location: Appointment_Index.php");
