@@ -9,17 +9,17 @@
         
         if ($row['id'] == $_GET['id']) {
           // Update the form action and method so that the data is submitted correctly
-          echo '<form id="Form_size" class="form-inline m-2" action="Appointment_Update.php" method="POST">';
+          echo '<form id="Form_size" class="form-inline my-4" action="Appointment_Update.php" method="POST">';
         
           echo '<input type="hidden" name="id" value="'.$row['id'].'">';
         
-          echo '<td><label for="date"><b>Date:</b></label>';
+          echo '<td><label class="ml-3" for="date"><b>Date:</b></label>';
           echo '<input type="text" name="date" id="Show_Date" class="form-control" value="'.$row['date'].'"></td>';
-          echo '<td><label for="time"><b>Time:</b></label>';
+          echo '<td><label class="ml-3" for="time"><b>Time:</b></label>';
           echo '<input type="text" name="time" id="Show_Time" class="form-control" value="'.$row['time'].'"></td>';
         
           echo '<td>
-                  <label for="doctor"><b>Doctor:</b></label>
+                  <label class="ml-3" for="doctor"><b>Doctor:</b></label>
                   <select name="doctor" id="Show_Doctor" class="form-control">';
           if ($result1->num_rows > 0) {
             while ($row1 = $result1->fetch_assoc()) {
@@ -33,7 +33,7 @@
                 </td>';
         
           echo '<td>
-                  <label for="patient"><b>Patient:</b></label>
+                  <label class="ml-3" for="patient"><b>Patient:</b></label>
                   <select name="patient" id="Show_Patient" class="form-control">';
           if ($result2->num_rows > 0) {    
             while ($row2 = $result2->fetch_assoc()) {

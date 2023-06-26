@@ -63,6 +63,8 @@
         #btn-primary {
             background-color: #2F4131;
             border-color: #2F4131;
+            float: right;
+            margin-right: 75px;
             
         }
         #btn-primary:hover {
@@ -80,9 +82,7 @@
         }
         #btns  {
             margin-top: 15px;
-            padding-bottom: 10px;
-            margin-left: 6%;
-            margin-right: 5%;  
+            padding-bottom: 10px;  
         }
         .successmessage {
             margin-top: 10px;
@@ -93,6 +93,9 @@
             color: #202C22;
         }
         #Form_size {
+            justify-content: center;
+            display: flex;
+            width: 85%;
             margin-left: auto;
             margin-right: auto;
             height: auto;
@@ -101,6 +104,7 @@
         }
         #Form_align {
             height: auto;
+            
             margin-left: 20px;
             background-color: rgba(106, 123, 139, 0.85);
         }
@@ -190,8 +194,7 @@
             
                     <!-- Buttons -->
                     <div id="btns" class="col-sm-12">
-                        <button class="col-sm-5 btn-secondary mx-1">Discard</button>
-                        <button id="btn-primary" type="submit" class="col-sm-5 btn-success mx-1" name="addAppointment">Add Appointment</button>
+                        <button id="btn-primary" type="submit" class="btn-success col-sm-3" name="addAppointment">Add Appointment</button>
                     </div>
                 </div>
             </form>

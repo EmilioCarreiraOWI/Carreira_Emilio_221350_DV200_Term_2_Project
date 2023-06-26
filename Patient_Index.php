@@ -88,40 +88,38 @@
             color: #202C22;
         }
         #Form_size {
+            justify-content: center;
+            display: flex;
+            width: 250px;
+            margin-left: auto;
+            margin-right: auto;
             height: auto;
-            
-            margin-left: 20px;
+            padding: 5px;
             background-color: rgba(106, 123, 139, 0.85);
         }
         #Form_align {
             height: auto;
-            
-            margin-left: 20px;
             background-color: rgba(106, 123, 139, 0.85);
         }
         #Show_name, #Show_Surname, #Show_Age, #Show_Gender, #Show_Profile, #Show_Number, #Show_Email, #Show_Medical_Aid_Number {
             background-color: rgba(47, 65, 49, 0.75);
             color: white;
-            margin-left: 20px;
+            
             border: 1px solid whitesmoke;
             padding-top: 5px;
             padding-bottom: 5px;
             border-radius: 4px;
         }
-        #list {
-            position: absolute;
-            margin-left: 20px;
-            
-        }
-        #contain2 {
-            margin-left: 40%;
-            width: 850px;
-            
-        }
+        
+        
         #mainheading2 {
+            justify-content: center;
+            display: flex;
+            margin-left: auto;
+            margin-right: auto;
+            height: auto;
+            padding: 5px;
             margin-top: 10%;
-            margin-bottom: -10px;
-            margin-left: 41.5%;
             width: 250px;
             background-color: rgba(17, 22, 19, 0.95);
             color: white;

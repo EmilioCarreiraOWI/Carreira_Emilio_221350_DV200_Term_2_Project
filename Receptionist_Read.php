@@ -9,7 +9,7 @@
         echo "<tr id='Form_align'>";
         if ($row['id'] == $_GET['id']) {
             // Update the form action and method so that the data is submitted correctly
-            echo '<form id="Form_size" class="form-inline m-2" action="Receptionist_Update.php" method="POST">';
+            echo '<form id="Form_size" class="form-inline" action="Receptionist_Update.php" method="POST">';
             
             // Add a hidden input field to store the doctor's ID
             echo '<input type="hidden" name="id" value="'.$row['id'].'">';
