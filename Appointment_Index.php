@@ -94,11 +94,7 @@
         }
         #Form_size {
             height: auto;
-            position: absolute;
             padding: 5px;
-            left: 50%;
-            top: 50%;
-            transform: translate(-50%, -50%);
             background-color: rgba(106, 123, 139, 0.85);
         }
         #Form_align {

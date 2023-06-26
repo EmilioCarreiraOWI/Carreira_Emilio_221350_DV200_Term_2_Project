@@ -15,23 +15,27 @@
             echo '<input type="text" name="date" id="Show_Date" class="form-control" value="'.$row['date'].'"></td>';
             echo '<td><label for="time"><b>Time:</b></label>';
             echo '<input type="text" name="time" id="Show_Time" class="form-control" value="'.$row['time'].'"></td>';
+            echo '<td><label for="time"><b>Doctor:</b></label>';
+            echo '<input type="text" name="doctor" id="Show_Doctor" class="form-control" value="'.$row['doctor'].'"></td>';
+            echo '<td><label for="time"><b>Patient:</b></label>';
+            echo '<input type="text" name="patient" id="Show_Patient" class="form-control" value="'.$row['patients'].'"></td>';
 
             // Create a dropdown list to select the doctor
-            $sql1 = "SELECT name, surname, id FROM doctor ORDER BY surname ASC";
-            $result1 = $conn->query($sql1);
-            echo '<td><label for="doctor"><b>Doctor:</b></label><select name="doctor" id="Show_Doctor" class="form-control">';
-            while($rowD = $result1->fetch_assoc()) {
-                    echo '<option name="doctor" value="'.$rowD['id'].'" selected>'.$rowD['name'].' '.$rowD['surname'].'</option>';
-            }
-            echo '</select></td>';
+            // $sql1 = "SELECT name, surname, id FROM doctor ORDER BY surname ASC";
+            // $result1 = $conn->query($sql1);
+            // echo '<td><label for="doctor"><b>Doctor:</b></label><select name="doctor" id="Show_Doctor" class="form-control">';
+            // while($rowD = $result1->fetch_assoc()) {
+            //         echo '<option name="doctor" value="'.$rowD['id'].'" selected>'.$rowD['name'].' '.$rowD['surname'].'</option>';
+            // }
+            // echo '</select></td>';
 
-            // Create a dropdown list to select the patient
-            $sql2 = "SELECT id, name, surname FROM patients";
-            $result2 = $conn->query($sql2);
-            echo '<td><label for="patient"><b>Patient:</b></label><select name="patient" id="Show_Patient" class="form-control">';
-            while($rowP = $result2->fetch_assoc()) {
-                    echo '<option value="'.$rowP['id'].'" selected>'.$rowP['name'].' '.$rowP['surname'].'</option>';
-            }
+            // // Create a dropdown list to select the patient
+            // $sql2 = "SELECT id, name, surname FROM patients";
+            // $result2 = $conn->query($sql2);
+            // echo '<td><label for="patient"><b>Patient:</b></label><select name="patient" id="Show_Patient" class="form-control">';
+            // while($rowP = $result2->fetch_assoc()) {
+            //         echo '<option value="'.$rowP['id'].'" selected>'.$rowP['name'].' '.$rowP['surname'].'</option>';
+            // }
             echo '</select></td>';
             
             // Add a Save button to submit the form
