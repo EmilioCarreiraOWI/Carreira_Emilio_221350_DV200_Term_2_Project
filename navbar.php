@@ -17,6 +17,20 @@
     border-radius: 50%;
     border: 2px solid black;
   }
+  #logoutbtn{
+    background-color: rgba(47, 65, 49, 0.75);
+    color: white;
+    margin-left: 20px;
+    border: 1px solid whitesmoke;
+    padding-top: 5px;
+    padding-bottom: 5px;
+    border-radius: 4px;
+  }
+  #logoutbox {
+    display: flex;
+    align-items: end;
+    justify-items: end;
+  }
 
 
   </style>
@@ -53,11 +67,14 @@
                 </li>
                 
             </ul>
-            <ul class="navbar-nav float-right">
-              <li class="nav-item">
-                    <a class="nav-link btn-secondary" href="Logout.php">Logout</a>
-              </li>
-            </ul>
+            <div id="logoutbox">
+              <ul class="navbar-nav float-right">
+                <li class="nav-item">
+                  <a id="logoutbtn" class="nav-link btn-secondary" href="Logout.php">Logout</a>
+                </li>
+              </ul>
+            </div>
+            
         </div>
     </nav>
 

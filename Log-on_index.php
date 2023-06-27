@@ -3,7 +3,15 @@
 <head>
 	<title>LOGIN</title>
 	<link rel="stylesheet" type="text/css" href="style.css">
+
+    <meta 
+    Name:           Emilio Carreira
+    Student number: 221350
+    assessment:     PHP assignment term 2
+    >
+    
     <style>
+        
     body {
         background-image: url("https://gomohealth.com/wp-content/uploads/2019/08/gradient-background-healthcare-technology-01.png");
         display: flex;

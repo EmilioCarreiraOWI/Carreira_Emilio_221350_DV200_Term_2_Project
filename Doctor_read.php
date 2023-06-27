@@ -47,7 +47,7 @@
             echo '<input type="text" name="specialisation" id="Show_Specialisation" class="form-control" value="'.$row['specialisation'].'"></td>';
 
             // Add a Save button to submit the form
-            echo '<td><button type="submit" class="ml-4 mr-2 btn btn-primary">Save</button></td>';
+            echo '<td><button id="btn-primary" type="submit" class="ml-4 mr-2 btn btn-primary">Save</button></td>';
             echo '<td><a class="btn btn-danger" href="Doctor_Delete.php?id='.$row['id'].'" role="button">Delete</a></td>';
             echo '</form>';
         } else {
