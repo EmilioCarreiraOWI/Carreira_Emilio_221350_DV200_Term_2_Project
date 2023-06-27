@@ -5,6 +5,19 @@
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
     <title>Document</title>
 
+    <!-- Latest compiled and minified CSS -->
+    <link rel="stylesheet" href="https://maxcdn.bootstrapcdn.com/bootstrap/4.5.2/css/bootstrap.min.css">
+
+    <!-- jQuery library -->
+    <script src="https://ajax.googleapis.com/ajax/libs/jquery/3.5.1/jquery.min.js"></script>
+
+    <!-- Popper JS -->
+    <script src="https://cdnjs.cloudflare.com/ajax/libs/popper.js/1.16.0/umd/popper.min.js"></script>
+
+    <!-- Latest compiled JavaScript -->
+    <script src="https://maxcdn.bootstrapcdn.com/bootstrap/4.5.2/js/bootstrap.min.js"></script>
+
+
     <style>
         .container {
             margin-top: 5%;
@@ -108,10 +121,24 @@
             padding-top: 5px;
             padding-bottom: 5px;
             border-radius: 4px;
+        
+        }
+        #Display_image{
+            width: auto;
+            height: 100px;
+        }
+        #Display_name, #Display_surname, #Display_age, #Display_gender, #Display_phone_number, #Display_rank {
+            padding: 3px;
+            border: 3px solid white;
+            color: white;
+            background-color: rgba(47, 65, 49, 0.75);
         }
         #contain2 {
-            margin-left: 40%;
-            width: 870px;
+            justify-content: center;
+            width: 850px;
+            height: auto;
+            background-color: rgba(106, 123, 139, 0.85);
+
             
         }
         #mainheading2 {
@@ -124,11 +151,7 @@
         }
         
     </style>
-    <script>
 
-        
-
-    </script>
 
 </head>
 <body 

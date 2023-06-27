@@ -6,7 +6,6 @@
     $result = $conn->query($sql);
 
     while($row = $result->fetch_assoc()) {
-        echo "<tr id='Form_align'>";
         if ($row['id'] == $_GET['id']) {
             // Update the form action and method so that the data is submitted correctly
             echo '<form id="Form_size" class="form-inline my-3" action="Patient_Update.php" method="POST">';
@@ -53,6 +52,7 @@
             echo '</form>';
         } else {
             // Display the doctor details as normal and include an Update link to edit data
+            echo "<tr>";
             echo "<td id=\"Show_Profile\">". "<img src='" . $row['time'] . "'>" . "</td>";
             echo "<td>".$row['name']."</td>";
             echo "<td>".$row['surname']."</td>";
@@ -63,13 +63,9 @@
             echo "<td>".$row['specialisation']."</td>";
             
             echo '<td><a href="Patient_Update.php?id='.$row['id'].'">Update</a></td>';
+            echo "</tr>";
         }
         
-        // Add a Delete link to remove the doctor from the system
-        
-        
-        // Close the table row
-        echo "</tr>";
     }
 
     $conn->close();

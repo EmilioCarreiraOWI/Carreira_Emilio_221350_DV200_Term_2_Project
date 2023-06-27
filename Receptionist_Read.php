@@ -6,7 +6,7 @@
     $result = $conn->query($sql);
 
     while($row = $result->fetch_assoc()) {
-        echo "<tr id='Form_align'>";
+        
         if ($row['id'] == $_GET['id']) {
             // Update the form action and method so that the data is submitted correctly
             echo '<form id="Form_size" class="form-inline" action="Receptionist_Update.php" method="POST">';
@@ -56,23 +56,22 @@
             echo '</form>';
         } else {
             // Display the doctor details as normal and include an Update link to edit data
-            echo "<td>". "<img src='" . $row['time'] . "'>" . "</td>";
-            echo "<td>".$row['name']."</td>";
-            echo "<td>".$row['surname']."</td>";
-            echo "<td>".$row['age']."</td>";
-            echo "<td>".$row['gender']."</td>";
-            echo "<td>".$row['phone_number']."</td>";
-            echo "<td>".$row['email']."</td>";
-            echo "<td>".$row['rank']."</td>";
-            
+            echo "<tr>";
+            echo "<td id='Display_image'>". "<img src='" . $row['profile_image'] . "'>" . "</td>";
+            echo "<td id='Display_name'>".$row['name']."</td>";
+            echo "<td id='Display_surname'>".$row['surname']."</td>";
+            echo "<td id='Display_age'>".$row['age']."</td>";
+            echo "<td id='Display_gender'>".$row['gender']."</td>";
+            echo "<td id='Display_phone_number'>".$row['phone_number']."</td>";
+            echo "<td id='Display_email'>".$row['email']."</td>";
+            echo "<td id='Display_rank'>".$row['rank']."</td>";
+
             echo '<td><a href="Receptionist_Update.php?id='.$row['id'].'">Update</a></td>';
+            echo '<td><a class="btn btn-danger" href="Receptionist_Delete.php?id='.$row['id'].'" role="button">Delete</a></td>';
+            echo "</tr>";
+            echo '<br>';
         }
-        
-        // Add a Delete link to remove the doctor from the system
-        echo '<td><a class="btn btn-danger" href="Receptionist_Delete.php?id='.$row['id'].'" role="button">Delete</a></td>';
-        
-        // Close the table row
-        echo "</tr>";
+          
     }
 
     $conn->close();

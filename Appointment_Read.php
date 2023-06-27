@@ -50,6 +50,7 @@
           echo '<td><button type="submit" class="ml-3 btn btn-primary">Save</button></td>';
           echo '</form>';
         } else {
+            echo "<tr>";
             echo "<td>".$row['date']."</td>";
             echo "<td>".$row['time']."</td>";
         
@@ -71,6 +72,7 @@
             echo "<td>".$patient['name']." ".$patient['surname']."</td>";
             echo '<td><a href="Appointment_Index.php?id='.$row['id'].'">Update</a></td>';
             echo '<td><a class="btn btn-danger" href="Appointment_Delete.php?id='.$row['id'].'" role="button">Delete</a></td>';
+            echo "</tr>";
         }
         
 
