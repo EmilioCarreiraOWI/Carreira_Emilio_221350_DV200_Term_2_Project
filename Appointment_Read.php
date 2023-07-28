@@ -15,6 +15,7 @@
         
           echo '<td><label class="ml-3" for="date"><b>Date:</b></label>';
           echo '<input type="text" name="date" id="Show_Date" class="form-control" value="'.$row['date'].'"></td>';
+
           echo '<td><label class="ml-3" for="time"><b>Time:</b></label>';
           echo '<input type="text" name="time" id="Show_Time" class="form-control" value="'.$row['time'].'"></td>';
         
@@ -38,7 +39,7 @@
           if ($result2->num_rows > 0) {    
             while ($row2 = $result2->fetch_assoc()) {
               $selected = ($row2['id'] === $row['patient']) ? 'selected' : '';
-              echo '<option value="'.$row2['id'].'" '.$selected.'>'.$row2['name'].' '.$row2['surname'].'</option>';
+              echo '<option value="'.$row2['patient_id'].'" '.$selected.'>'.$row2['name'].' '.$row2['surname'].'</option>';
             }
           } else {
             echo '<option value="">No patients found</option>';
