@@ -9,7 +9,7 @@
         
         if ($row['id'] == $_GET['id']) {
             // Update the form action and method so that the data is submitted correctly
-            echo '<form id="Form_size" class="form-inline" action="Receptionist_Update.php" method="POST">';
+            echo '<form id="Form_size" class="form-inline" method="POST"> action="Receptionist_Update.php" ';
             
             // Add a hidden input field to store the doctor's ID
             echo '<input type="hidden" name="id" value="'.$row['id'].'">';
@@ -57,19 +57,44 @@
         } else {
             // Display the doctor details as normal and include an Update link to edit data
             echo "<tr>";
+            echo "<lable><b>Image:</b></lable>";
+            echo " ";
             echo "<td id='Display_image'>". "<img src='" . $row['profile_image'] . "'>" . "</td>";
+            echo "    ";
+            echo "<lable><b>Name & Surname:</b></lable>";
+            echo " ";
             echo "<td id='Display_name'>".$row['name']."</td>";
+            echo "  ";
             echo "<td id='Display_surname'>".$row['surname']."</td>";
+            echo "    ";
+            echo "<lable><b>Age:</b></lable>";
+            echo " ";
             echo "<td id='Display_age'>".$row['age']."</td>";
+            echo "    ";
+            echo "<lable><b>Gender:</b></lable>";
+            echo " ";
             echo "<td id='Display_gender'>".$row['gender']."</td>";
+            echo "    ";
+            echo "<lable><b>Phone Number:</b></lable>";
+            echo " ";
             echo "<td id='Display_phone_number'>".$row['phone_number']."</td>";
+            echo "    ";
+            echo "<br>";
+            echo "<lable><b>Email:</b></lable>";
+            echo " ";
             echo "<td id='Display_email'>".$row['email']."</td>";
+            echo "    ";
+            echo "<lable><b>Rank:</b></lable>";
+            echo " ";
             echo "<td id='Display_rank'>".$row['rank']."</td>";
-
-            echo '<td><a href="Receptionist_Update.php?id='.$row['id'].'">Update</a></td>';
-            echo '<td><a class="btn btn-danger" href="Receptionist_Delete.php?id='.$row['id'].'" role="button">Delete</a></td>';
+            echo "    ";
+            echo '<td><a id="Update_btn" class="btn btn-primary" href="Receptionist_Update.php?id='.$row['id'].'">Update</a></td>';
+            echo "    ";
+            echo '<td><a id="Delete_btn" class="btn btn-danger" href="Receptionist_Delete.php?id='.$row['id'].'" role="button">Delete</a></td>';
             echo "</tr>";
             echo '<br>';
+            echo '<br>';
+
         }
           
     }

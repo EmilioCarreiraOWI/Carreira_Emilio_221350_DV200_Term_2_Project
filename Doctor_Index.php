@@ -162,6 +162,7 @@
             <div id="mainheading">
                 <h3>Create Doctor Account</h3>
             </div>
+            
             <form id="Form1" method="POST" action="Doctor_Add.php" >
 
             <?php if (isset($_GET['success'])) { ?>
@@ -179,12 +180,12 @@
                         <label class="col-sm-12" id="heading" for=""><b>Email</b></label>
                         <input class="col-sm-12" type="text" class="form-control" id="email" name="email"> 
                     </div>
-                <!--Name & Surname-->
+                <!--Name-->
                     <div class="col-sm-4" style="margin-left: 14%;">
                         <label class="col-sm-8" id="heading" for=""><b>Name</b></label>
                         <input class="col-sm-12" type="text" class="form-control" id="name" name="name">
                     </div>
-                <!--Name & Surname-->
+                <!--Surname-->
                     <div class="col-sm-4" style="margin-left: 18px;">
                         <label class="col-sm-8" id="heading" for=""><b>Surname</b></label>
                         <input class="col-sm-12" type="text" class="form-control" id="surname" name="surname">

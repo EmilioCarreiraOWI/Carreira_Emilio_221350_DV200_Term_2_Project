@@ -155,6 +155,22 @@
             background-color: rgba(17, 22, 19, 0.95);
             color: white;
         }
+
+        #Update_btn {
+            background-color: #405742;
+            color: white;
+        }
+
+        #Delete_btn {
+            background-color: #405742;
+            color: white;
+        }
+
+        #Update_btn, #Delete_btn {
+            padding: 7px;
+            justify-content: end;
+            border-radius: 4px;
+        }
         
     </style>
 
