@@ -18,7 +18,10 @@ I was tasked with making a webpage for the receptionist for this website. To sav
    - For XAMPP: Download the XAMPP installer from the official XAMPP website (https://www.apachefriends.org/index.html) and follow the installation instructions for your operating system.
 
 2. Clone the repository: `git clone <repository-url>`
-3. Move the project files to the web server's document root directory. For MAMP, the document root is typically located at `/Applications/MAMP/htdocs/`. For XAMPP, it is typically located at `C:\xampp\htdocs\`.
+```
+https://github.com/EmilioCarreiraOWI/Carreira_Emilio_221350_DV200_Term_2_Project.git
+```
+4. Move the project files to the web server's document root directory. For MAMP, the document root is typically located at `/Applications/MAMP/htdocs/`. For XAMPP, it is typically located at `C:\xampp\htdocs\`.
 
 ## Usage
 
