@@ -1,18 +1,15 @@
-# Project Name
+![Group 63](https://github.com/EmilioCarreiraOWI/Carreira_Emilio_221350_DV200_Term_2_Project/assets/113447065/99479772-61bb-4abf-9748-5a9436d36fce)
 
-A brief description of the project and its purpose.
+# Health Centre
+
+I was tasked with making a webpage for the receptionist for this website. To save in a mySQL database, he or she needs to be able to create a patient, a doctor, and an appointment. The researcher needs to schedule a visit with current physicians and patients.  For my project, I used MAMP. I'll go over the download sequence below.
 
 ## Table of Contents
 
-- [Project Description](#project-description)
 - [Installation](#installation)
 - [Usage](#usage)
 - [Contributing](#contributing)
 - [License](#license)
-
-## Project Description
-
-Provide a detailed description of the project, including its objectives, scope, and any specific requirements or constraints.
 
 ## Installation
 
@@ -34,18 +31,8 @@ Provide a detailed description of the project, including its objectives, scope, 
 
 ## Contributing
 
-Specify guidelines for contributing to the project, including how to submit bug reports, feature requests, or code contributions. Mention any coding standards or conventions to follow.
+I intend to improve the website in the future, but I was unable to implement all of its functionality. A page may update or delete an appointment, depending on the page.
 
 ## License
 
-Specify the license under which the project is distributed.
-
-## Acknowledgements
-
-If applicable, acknowledge any external libraries, resources, or contributors that have been used in the project.
-
-## Contact
-
-Provide contact information for the project creator or team.
-
-Feel free to customize this template based on your specific project requirements.
+[MIT](LICENSE) © Emilio Carreira
