@@ -16,37 +16,20 @@ Provide a detailed description of the project, including its objectives, scope, 
 
 ## Installation
 
-1. Install PHP: 
-   - For Windows: Download the PHP installer from the official PHP website (https://www.php.net/downloads.php) and follow the installation instructions.
-   - For macOS: PHP is pre-installed on macOS. You can verify the installation by opening the Terminal and running the command `php -v`.
-   - For Linux: Open the Terminal and run the following command based on your distribution:
-     - Ubuntu/Debian: `sudo apt-get install php`
-     - CentOS/Fedora: `sudo yum install php`
-     - Other distributions: Refer to the official documentation for your specific distribution.
+1. Install MAMP or XAMPP:
+   - For MAMP: Download the MAMP installer from the official MAMP website (https://www.mamp.info/) and follow the installation instructions for your operating system.
+   - For XAMPP: Download the XAMPP installer from the official XAMPP website (https://www.apachefriends.org/index.html) and follow the installation instructions for your operating system.
 
-2. Install a web server:
-   - For Windows: You can use XAMPP (https://www.apachefriends.org/index.html) or WampServer (https://www.wampserver.com/en/).
-   - For macOS: Apache web server is pre-installed. You can start it by opening the Terminal and running the command `sudo apachectl start`.
-   - For Linux: Install Apache web server by running the following command:
-     - Ubuntu/Debian: `sudo apt-get install apache2`
-     - CentOS/Fedora: `sudo yum install httpd`
-     - Other distributions: Refer to the official documentation for your specific distribution.
-
-3. Clone the repository: `git clone <repository-url>`
-4. Move the project files to the web server's document root directory. For example:
-   - For XAMPP: Move the project folder to `C:\xampp\htdocs\`
-   - For WampServer: Move the project folder to `C:\wamp\www\`
-   - For Apache on macOS: Move the project folder to `/Library/WebServer/Documents/`
-   - For Apache on Linux: Move the project folder to `/var/www/html/`
+2. Clone the repository: `git clone <repository-url>`
+3. Move the project files to the web server's document root directory. For MAMP, the document root is typically located at `/Applications/MAMP/htdocs/`. For XAMPP, it is typically located at `C:\xampp\htdocs\`.
 
 ## Usage
 
-1. Start the web server:
-   - For XAMPP/WampServer: Open the control panel and start the Apache server.
-   - For macOS: Open the Terminal and run the command `sudo apachectl start`.
-   - For Linux: Run the command `sudo service apache2 start`.
+1. Start MAMP or XAMPP:
+   - For MAMP: Open the MAMP application and click on the "Start Servers" button. This will start the Apache and MySQL servers.
+   - For XAMPP: Open the XAMPP Control Panel and click on the "Start" button next to Apache and MySQL.
 
-2. Open a web browser and enter `http://localhost` or `http://127.0.0.1` in the address bar.
+2. Open a web browser and enter `http://localhost` in the address bar.
 3. The project should now be accessible in the web browser.
 
 ## Contributing
